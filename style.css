@@ -31,13 +31,15 @@ html, body {
 } 
 .page{
   width: min(900px, 92vh);
-  /* height: auto; */
+   height: auto; 
   display: flex;
   flex-direction: column;
   align-items: center;
-   border: 1px solid rgba(255, 255, 255, .25);
+  border: 1px solid rgba(255, 255, 255, .25);
   border-radius: 20px;
-    box-shadow: 0 0 20px rgba(255, 0, 190, .22);
+  box-shadow: 0 0 20px rgba(255, 0, 190, .22);
+  padding: 20px 15px 25px;
+  overflow: hidden;
   
 }
 
@@ -70,9 +72,7 @@ hr{
   gap: clamp(25px, 7vw, 75px);
   backdrop-filter: blur(5px);
   border-bottom: none;
-  /* border: 1px solid rgba(255, 255, 255, .25);
-  border-radius: 18px 18px 0 0 ;
-    box-shadow: 0 0 20px rgba(255, 0, 190, .22); */
+  
 }
  
 .choice{
@@ -139,13 +139,6 @@ hr{
   position: relative;
   backdrop-filter: blur(5px);
 
-  /* background: rgba(5, 8, 28, .9); */
-  /* border: 2px solid rgba(255, 255, 255, .25);
-  border-top: 2px solid rgba(255, 255, 255, .1);
-  border-bottom: 2px solid rgba(255, 255, 255, .1) */
-  /* background: rgba(10, 12, 30, .6);
-  border-left: 2px solid rgba(255, 255, 255, .25);
-  border-right: 2px solid rgba(255, 255, 255, .25); */
   
 }
 .score{
@@ -155,7 +148,6 @@ hr{
   flex-direction: column;
   align-items: center;
   box-shadow: none;
-  /* box-shadow: 0 0 22px #d778ff; */
   border-radius: 0;
 }
 #user-score, #comp-score{
@@ -178,30 +170,15 @@ hr{
   letter-spacing: 2px;
   text-shadow: 0 0 10px #8b6dff;
 }
-/* .score p::before{
-  content: "VS"; 
-  position: absolute; 
-   left: 48.6%; 
-  color: #d778ff;
-  font-weight: 800;
-  font-size: 2rem;
-  display: flex;
-  margin-top: 12px;
- justify-content: center;
-  text-shadow: 0 0 12px #a83cff;
-} */
 
 /* Message Box */
 .msg-container{
   width: 100%;
-  /* background: rgba(15, 20, 45, .55); */
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(5px);
-  /* border:  2px solid rgba(255, 255, 255, .25); */
   border-top: none;
   border-radius: 0 0 20px 20px;
   padding: 10px;
-  /* min-height: 30px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -234,9 +211,12 @@ hr{
   justify-content: center;
   gap: 15px;
   margin-top: 19px;
+  width: 100%;
+  flex-wrap: wrap;
 }
 .buttons button{
-  width: 300px;
+  width: 45%;
+  max-width: 250px;
   padding: 15px;
   border-radius: 10px;
   font-size: 1.5rem;
@@ -325,7 +305,5 @@ footer{
   #startBtn, #resetBtn{
     max-width: 100%;
   }
-  /* footer{
-    font-size: clamp(0.8rem, 3vw,1.7rem);
-  } */
+  
 }
