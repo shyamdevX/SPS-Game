@@ -7,6 +7,13 @@
  
 }
 
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;      
+}
+
+
  body{
 
   min-height: 100vh;
@@ -292,6 +299,18 @@ footer{
   letter-spacing: 2px;
   text-align: center;
 }
+@media(max-width:600px){
+  .Choices {
+    flex-wrap: wrap; 
+    gap: 20px;       
+  }
+  
+  .choice img{
+    width: 80px !important; 
+    height: 80px !important; 
+  }
+}
+
 @media(max-width:600px){
   .score-card{
     flex-direction: row;
